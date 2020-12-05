@@ -1,0 +1,6 @@
+#!/bin/bash -ex
+
+cd "${LAMINAR_HOME}/cfg" \
+    && git fetch --all \
+    && git reset --hard HEAD \
+    && git pull --force

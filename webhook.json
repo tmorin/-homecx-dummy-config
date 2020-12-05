@@ -1,0 +1,17 @@
+[
+  {
+    "id": "update-configuration",
+    "command-working-directory": "/data",
+    "execute-command": "laminarc",
+    "pass-arguments-to-command": [
+      {
+        "source": "string",
+        "name": "queue"
+      },
+      {
+        "source": "string",
+        "name": "update-configuration"
+      }
+    ]
+  }
+]
