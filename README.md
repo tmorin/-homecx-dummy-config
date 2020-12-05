@@ -17,7 +17,7 @@ docker run \
     -v $(pwd)/bob-rsa-key:/data/.ssh/id_rsa:ro \
     -v $(pwd)/bob-rsa-key-pub:/data/.ssh/id_rsa.pub:ro \
     -v /var/run/docker.sock:/var/run/docker.sock \
-    --env HOMECX_REPOSITORY=git@gitlab.com:tmorin/homecx.git \
+    --env HOMECX_REPOSITORY=git@github.com:tmorin/homecx-dummy-config.git \
     thibaultmorin/homecx
 ```
 
@@ -29,7 +29,7 @@ docker run \
     -p 9000:9000 \
     -p 9001:9001 \
     -v /var/run/docker.sock:/var/run/docker.sock \
-    --env HOMECX_REPOSITORY=https://gitlab.com/tmorin/homecx-dummy-config.git \
+    --env HOMECX_REPOSITORY=https://github.com/tmorin/homecx-dummy-config.git \
     thibaultmorin/homecx
 ```
 
